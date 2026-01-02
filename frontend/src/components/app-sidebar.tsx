@@ -3,7 +3,6 @@ import { FileText, Home, PlusCircle, Settings, TrendingUp } from "lucide-react";
 import { useSelector } from "react-redux";
 
 import { NavMain } from "@/components/nav-main";
-import { NavProjects } from "@/components/nav-projects";
 import { NavUser } from "@/components/nav-user";
 import {
   Sidebar,

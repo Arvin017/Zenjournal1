@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -9,9 +8,6 @@ import { Loader2, Bell, Mail, MessageSquare } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
 
 export default function NotificationSettings() {
-  const userData = useSelector(
-    (state: { auth: { userData: any } }) => state.auth.userData
-  );
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [isFetching, setIsFetching] = useState(true);
