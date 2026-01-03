@@ -16,12 +16,11 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 import cors from "cors";
 
-app.use(cors());
 
-import cors from "cors";
 
 app.use(cors({
   origin: [
+    "http://localhost:5173",
     "https://zenjournal1.vercel.app"
   ],
   credentials: true
